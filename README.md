@@ -1,7 +1,7 @@
 # Benchmark
 
 ## Dependencies
-* http://httpd.apache.org/docs/2.2/programs/ab.html
+* <a href="http://httpd.apache.org/docs/2.2/programs/ab.html" target="_blank">http://httpd.apache.org/docs/2.2/programs/ab.html</a>
 
 ## Development
 
