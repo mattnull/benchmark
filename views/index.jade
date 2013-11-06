@@ -1,0 +1,14 @@
+include includes/header
+.container
+	h1 Benchmark
+	h2 Choose your language
+	ul
+		- for(var i in languages){
+			li
+				a.language(data-language="#{i}", href="javascript:void(0);") #{i}
+		- }
+	h2 Status
+	#status
+
+	h2 Results
+	#results

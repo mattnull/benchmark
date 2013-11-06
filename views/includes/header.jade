@@ -1,0 +1,48 @@
+doctype 5
+html(lang="en")
+	head
+		title Benchmark
+		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+		meta(name="description", content="")
+		meta(http-equiv="content-type", content="text/html;charset=UTF-8")
+		meta(property="og:image", content="")
+		meta(property="og:title", content="")
+		meta(property="og:description", content="")	
+		script(src="http://localhost:7777/socket.io/socket.io.js")
+
+		-if(typeof(ENV) === 'undefined' || !ENV)
+
+			// Vendor CSS
+			link(rel="stylesheet", href="/public/css/vendor.css") 
+
+			//CSS Files
+			link(rel="stylesheet", href="/public/css/lib/main.css")
+
+			// Vendor JS Libs
+			script(src="/public/js/vendor.js")
+
+			// Handlebars Templates (pre-compiled by server)
+			script(src="/public/js/templates/templates.js")
+
+			// JS Files
+			script(src="/public/js/lib/app.js")
+
+		- else
+
+			//Vendor CSS 
+			link(rel="stylesheet", href="/public/css/vendor.css")
+
+			//CSS Build File
+			link(rel="stylesheet", href="/public/css/build.css")
+
+			//Vendor JS Libs 
+			script(src="/public/js/vendor.js")
+
+			// Templates
+			script(src="/public/js/templates/templates.js")
+
+			//JS Build File
+			script(src="/public/js/build.js")
+
+	body
+		block content

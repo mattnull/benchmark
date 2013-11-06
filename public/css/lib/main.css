@@ -1,0 +1,43 @@
+.yellow-type {
+  color: #fece2f;
+}
+.orange-type {
+  color: #f48730;
+}
+.light-type {
+  color: #999;
+}
+.background-yellow {
+  background: #fece2f;
+}
+.background-orange {
+  background: #f48730;
+}
+.background-charcoal {
+  background: #2d2d2d;
+}
+.center-type {
+  text-align: center;
+}
+.coming-soon-copy {
+  color: #999;
+  font-family: "Helvetica-light", Helvetica, Arial, Sans-serif;
+  font-style: italic;
+}
+.orange-link {
+  color: #f48730;
+}
+body {
+  font-family: "HelveticaNeue-Lite", Helvetica;
+  color: #333;
+  font-weight: 200;
+}
+#main {
+  margin-top: 90px;
+}
+#status {
+  height: 300px;
+  overflow-y: scroll;
+  border: 2px solid #333;
+  padding: 5px;
+}
