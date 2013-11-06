@@ -1,6 +1,6 @@
 # Benchmark
 
-## Dependancies
+## Dependencies
 * http://httpd.apache.org/docs/2.2/programs/ab.html
 
 ## Development
