@@ -1,7 +1,7 @@
 # Benchmark
 
 ## Dependencies
-* <a href="http://httpd.apache.org/docs/2.2/programs/ab.html" target="_blank">http://httpd.apache.org/docs/2.2/programs/ab.html</a>
+* http://httpd.apache.org/docs/2.2/programs/ab.html
 
 ## Development
 
@@ -14,5 +14,5 @@ The following command will watch and compile Coffeescript, Stylus, and Handlebar
 * run `cake build`
 
 ## Languages
-* Go - <a href="http://golang.org/" target="_blank">http://golang.org/</a>
-* Node.js - <a href="http://nodejs.org/" target="_blank">http://nodejs.org/</a>
+* Go - http://golang.org/
+* Node.js - http://nodejs.org
