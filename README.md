@@ -14,5 +14,5 @@ The following command will watch and compile Coffeescript, Stylus, and Handlebar
 * run `cake build`
 
 ## Languages
-* Go - http://golang.org/
-* Node.js - http://nodejs.org
+* Go - <a href="http://golang.org/" target="_blank">http://golang.org/</a>
+* Node.js - <a href="http://nodejs.org/" target="_blank">http://nodejs.org/</a>
