@@ -13,6 +13,7 @@ To recreate this on your end -
 2. Navigate to the directory: `cd your_project_name`
 3. Install dependencies: `npm install`
 4. Run `cake dev`
+5. Install Apache Benchmark if you don't already have it
 
 -------- divider ---- 
 
