@@ -9,8 +9,10 @@ Essentially, we are testing whether "'doing multiple things at once' is faster t
 Put simply, tests are broken into two categories - (1) ascynchronous (node) vs syncronous (all others) and (2) ascynchronous (node) vs ascynchronous (all others). 
 
 To recreate this on your end - 
-1. Clone the repo.
-2. ...
+1. Clone the repo: `git clone https://github.com/mattnull/benchmark.git your_project_name`
+2. Navigate to the directory: `cd your_project_name`
+3. Install dependencies: `npm install`
+4. Run `cake dev`
 
 -------- divider ---- 
 

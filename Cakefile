@@ -13,15 +13,15 @@ run = (name, command, cb) ->
     process.exit(1) if status isnt 0
     cb()
 
-option '-l', '--language [LANGUAGE]', 'specify what language to test'
-task 'benchmark', 'Benchmark various servers', (options) ->
-	lang = options.language
-	langConfig = config[lang]
-	run "killall #{lang}", () ->
-	console.log "Starting #{lang} server..."
-	run "#{langConfig.command} ./#{lang}/server.#{langConfig.extension}"
-	console.log 'Running benchmark tests...'
-	run "ab -c 100 -n 10000 http://127.0.0.1:#{langConfig.port}/"
+# option '-l', '--language [LANGUAGE]', 'specify what language to test'
+# task 'benchmark', 'Benchmark various servers', (options) ->
+#   lang = options.language
+#   langConfig = config[lang]
+#   run "killall #{lang}", () ->
+#   console.log "Starting #{lang} server..."
+#   run "#{langConfig.command} ./#{lang}/server.#{langConfig.extension}"
+#   console.log 'Running benchmark tests...'
+#   run "ab -c 100 -n 10000 http://127.0.0.1:#{langConfig.port}/"
 
 task 'system', 'Install system dependencies ', () ->
 
@@ -100,4 +100,3 @@ task 'build', 'Compress and combine javascript and CSS for production', () ->
 
   # compress and combine vendor css
   run 'banshee', '-c public/css/_includes.css:public/css/vendor.css'
-  
