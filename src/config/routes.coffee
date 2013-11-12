@@ -20,13 +20,14 @@ module.exports = (app, passport) ->
 		proc.on 'exit', (status) ->
 			socket.emit 'benchmarkDone', true
 			cb()
+
 	io.sockets.on 'connection', (socket) ->
 		socket.on 'benchmark', (lang) ->
 			console.log 'LANG'
 			langConfig = languageConfig[lang]
 			# run "killall #{lang}", socket
 			console.log "Starting #{lang} server..."
-			run "#{langConfig.command} ../servers/#{lang}/server.#{langConfig.extension}", socket
+			run "#{langConfig.command} #{__dirname}/../../servers/#{lang}/server.#{langConfig.extension}", socket
 			console.log 'Running benchmark tests...'
 			run "ab -c 100 -n 10000 http://127.0.0.1:#{langConfig.port}/", socket
 
